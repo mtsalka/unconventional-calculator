@@ -5,16 +5,16 @@ function getUserNumberInput() {
     return parseInt(userInput.value);
 }
 
-//logic of building a string + outputting it
+// Generates and writes calculation log
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
     const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
-    outputResult(currentResult, calcDescription);
+    outputResult(currentResult, calcDescription); //from vendor file
 }
 
 function add() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult + enteredNumber;
+    currentResult += enteredNumber;
     createAndWriteOutput('+', initialResult, enteredNumber );
 
 }
@@ -22,21 +22,21 @@ function add() {
 function subtract() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult - enteredNumber;
+    currentResult -= enteredNumber;
     createAndWriteOutput('-', initialResult, enteredNumber );
 }
 
 function multiply() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult * enteredNumber;
+    currentResult *= enteredNumber;
     createAndWriteOutput('*', initialResult, enteredNumber );
 }
 
 function divide() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult / enteredNumber;
+    currentResult /= enteredNumber;
     createAndWriteOutput('/', initialResult, enteredNumber );
 }
 
