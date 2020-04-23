@@ -43,7 +43,7 @@ function subtract() {
     const initialResult = currentResult;
     currentResult -= enteredNumber;
     createAndWriteOutput('-', initialResult, enteredNumber );
-    writeToLog('SUBSTRACT', initialResult, enteredNumber, currentResult);
+    writeToLog('SUBTRACT', initialResult, enteredNumber, currentResult);
 }
 
 function multiply() {
