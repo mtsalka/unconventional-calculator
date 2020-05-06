@@ -34,7 +34,8 @@ function calculateResult(calculationType) {
         calculationType !== 'ADD' && 
         calculationType !== 'SUBTRACT' && 
         calculationType !== 'DIVIDE' &&
-        calculationType !== 'MULTIPLY'
+        calculationType !== 'MULTIPLY' ||
+        !enteredNumber
     ) {
         return;
     }      
